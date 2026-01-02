@@ -1,0 +1,7 @@
+version: "3.6"
+services:
+ python-app:
+  build: ./python
+  container_name: mypython_container
+  ports:
+   - "8000:8000"
