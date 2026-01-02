@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  nodejs:
+    build: ./node //it will enter into the node directory and then check Dockerfile, if the name is mismatched will get error like unabke to locate Dockerfile
+    container_name: nodejs_app
+    ports:
+      - "3000:3000" //node js exported in port 3000
+    #restart: always //not required
